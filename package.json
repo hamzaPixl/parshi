@@ -1,0 +1,48 @@
+{
+  "name": "parshi",
+  "private": true,
+  "description": "Parshi game.",
+  "version": "1.0.0",
+  "homepage": "http://parshi.hmounir.com",
+  "author": "Hamza Mounir <hamza.pixelle@gmail.com>",
+  "main": "index.js",
+  "engines": {
+    "node": "12.16.1"
+  },
+  "dependencies": {
+    "config": "^3.3.3",
+    "pino-pretty": "^4.3.0",
+    "prompt-sync": "^4.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.18.0",
+    "eslint-config-airbnb-base": "^11.0.1",
+    "eslint-nibble": "^3.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jest": "^21.6.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "prettier": "2.1.1"
+  },
+  "keywords": [
+    "parshi",
+    "parsheesi",
+    "game",
+    "javascript",
+    "web"
+  ],
+  "license": "0BSD",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "NODE_ENV=local nodemon index.js",
+    "lint": "eslint . --ext .js",
+    "lint:fix": "eslint . --ext .js --fix",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hamzaPixl/parshi"
+  },
+  "bugs": {
+    "url": "https://github.com/hamzaPixl/parshi/issues"
+  }
+}
